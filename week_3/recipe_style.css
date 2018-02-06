@@ -1,0 +1,69 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+}
+
+.clearfix::after {
+	display: block;
+	clear: both;
+
+	height: 0;
+	font-size: 0;
+	content: "";
+
+	visability: hidden;
+}
+
+div,
+header,
+footer,
+main,
+aside,
+article {
+	min-height: 100px;
+	background-color: rgba(255, 0, 250, 0.2);
+}
+
+main {
+	width: 900px;
+	margin: 0 auto;
+}
+
+article {
+	width: 600px;
+	float left;
+	padding: 5px;
+}
+
+aside {
+	width: 300px;
+	float: left;
+	min-height: 10px;
+}
+
+ul.sidebar {
+	
+	color: #ccc;
+	text-decoration: none;
+	display: block;
+	padding: 25px;
+	background-color: orange;
+	text-align: center;
+}
+
+.sidebar li a:hover {
+	color: red;
+}
+
+
+
+
+
+
+
+
+
