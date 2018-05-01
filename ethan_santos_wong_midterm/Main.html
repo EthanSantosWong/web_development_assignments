@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ethan's World Bible</title>
+	
+	<link rel="stylesheet" href="css/Style.css">
+	<!--<link href="Google FOnts">-->
+</head>
+
+<body>
+ <div id="output"></div>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function(){
+ });
+  var list = ['Hello', 'Good Day', 'Greetings', 'Salutations', 'Nice to Meet You'];
+
+
+  //randomNumber(list.length);
+  
+  function randomNumber(n) {
+  	var result = document.getElementById('output');
+
+    var rn = Math.round(n * Math.random());
+    var choice = rn - 1;
+    var name = list[choice];
+    console.log(rn); 
+	console.log(choice);
+	console.log(list[choice]);
+	if (choice == -1) {
+		choice = 1
+	}
+	console.log(choice)
+	
+	var p = document.createElement("P");
+	var t = document.createTextNode(list[choice]);
+
+	p.appendChild(t);
+	result.appendChild(p);
+
+	//result.appendChild(p);
+  }
+	randomNumber(list.length);
+					
+					
+
+ 				</script>
+
+
+	<header>
+	 <h1>The World of Eathur</h1>
+	 <nav ul>
+	 		<li class="dropdown">
+	 			<a href="Locations.html" class="dropbox">Locations</a>
+	 			<div class="dropdown-content">
+	 				<a href="#">Village of Kinetail</a>
+	 				<a href="#">Steammor Metropolis</a>
+	 				<a href="#">Resort Archipelago of Oowan</a>
+	 				<a href="#">The Elmonian Municipality</a>
+	 				<a href="#">The Flying City: Val Sarquinn</a>
+	 				<a href="#">The Nivallese Empire</a>
+	 		</li>
+	 		<li class="dropdown">
+	 			<a href="Char.html" class="dropox">Main Characters</a>
+	 			<div class="dropdown-content">
+	 				<a href="#">Illedora Dahlasi</a>
+	 				<a href="#">Swetella "Sweeny" Ceankeel</a>
+	 				<a href="#">Shellma Zellwinslow</a>
+	 				<a href="#">Zorag Ria</a>
+	 				<a href="#">Rantonio Shenjingu</a>
+	 				</li>
+	 		<li class="dropdown">
+	 			<a href="Elem.html" class="dropbox">Elemental Crystals</a>
+	 			<div class="dropdown-content">
+	 				<a href="#">Types of Elements</a>
+	 				<a href="#">How they Form</a>
+	 				<a href="#">Hollow Crystals</a>
+	 				<a href="#">Imbuing Elements</a>
+	 		</li>
+	 	</nav ul>
+	</header>
+
+
+
+	<main>
+		<h2>Sample Title</h2>
+			<div class="image">
+				<img src="picture/rainbow_lightning.jpg">
+			</div>
+		<article class="container clearfix">
+			<section>
+				
+				 
+ 				<p>Let's get started shall we?</p>
+
+			</section>
+		</article>
+	</main>
+
+
+
+	<footer></footer>
+</body>
+
+</html>

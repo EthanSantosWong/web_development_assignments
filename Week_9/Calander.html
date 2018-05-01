@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Math.random and other Roundings</title>
+</head>
+<body>
+
+<script type="text/javascript">
+// var months;
+
+ //var months = [];
+
+ var months = ["January", "Febuary", "March", "April", "May", 
+ "June", "July", "August", "September", "October", "November",
+ "December"];
+
+ console.log(months);
+ console.log(months.length);
+
+ var lastMonth = months.pop();
+ console.log("The month that was removed was " + lastMonth + " now our array is length " + months.length);
+ console.log(months);
+
+ months.push(lastMonth);
+ console.log("The array has been changed, now it is of length " + months.length);
+ months.push("Deathuary");
+ console.log(months);
+ months.pop();
+
+ console.log(months[2]);
+
+ for(var i = 0; i<months.length; i++) {
+ 	console.log(i, months[i]);
+ }
+
+// for (i = months.length-1; i >= 0; i--) {
+// 	var dm = months.pop();
+// 	console.log(dm + " has been deleted, the array is now " + months.length);
+// }
+
+ function randomNumber(n) {
+	var rn = Math.round(n*Math.random());
+	return rn;	
+}
+
+console.log(randomNumber(18));
+
+console.log(months[randomNumber(months.length-1)]);
+
+ </script>
+</body>
+</html>

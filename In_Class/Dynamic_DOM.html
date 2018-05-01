@@ -1,0 +1,48 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+ <title>Adding to the DOM</title>
+</head>
+
+<body>
+	
+	<button onclick="addSingleP();">Adds a single paragraph the bad way.</button>
+	<button onclick="addMultiP(8);">Adds 8 paragraphs the good way.</button>
+	<h1 id="count"></h1>
+
+	<div id="content">
+
+	</div>
+
+  <script type="text/javascript">
+  	var content;
+  	content = document.getElementById("content");
+  	console.log(content);
+
+  	funtion addSingleP(){
+  		content.innerHTML = "<p>This is a single paragraph.</p>";
+  	}
+
+  	funtion addMultiP(num) {
+  		var (var i = 0; i < num; i++;) {
+  		 console.log(nu);
+  		 var p = document.createElement("P");
+  		 var text = document.createTextNode("This is a paragraph numnber" + i);
+  		 p.appendChild(text);
+  		 content.appendChild(P);
+  		}
+  		
+  	}
+
+  	var counter = 0;
+  	function incrementCounter() {
+  		var element = document.getElementById("count");
+  		element.innerHTML = counter;
+  		counter+=5;
+  	}
+
+  	window.setInterval(incrementCounter, 500);
+
+
+</body>
+</html>

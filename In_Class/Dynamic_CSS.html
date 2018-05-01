@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic CSS</title>
+	<style type="text/css">
+	 .active {
+	 	background-color: orange;
+	 	color: black;
+	 	font-size: 60px; 
+	 }
+	</style>
+
+</head>	
+
+<body>
+<h1 id="changeMe" onClick="toggleActive();">I can change, click me!</h1>
+<script type="text/javascript">
+
+	function toggleActive() {
+		var element = document.getElementById("changeME");
+		if (element.classList.contains("active")) {
+			console.log(element.classList);
+			element.classList.remove("active");
+			element.innerHTML = "No longer active.";
+		} else {
+			element.classList.add("active");
+			element.innerHTML = "I am now active!";
+		}
+	}
+</script>
+</body>
+</html>

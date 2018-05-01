@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Math.random and other Roundings</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var z = 2.25;
+var y = 2.65;
+var zf = Math.floor(z);
+console.log(zf);
+
+var zc = Math.ceil(z);
+console.log(zc);
+
+var zr = Math.round(z);
+var yr = Math.round(y);
+console.log(zr, yr);
+
+var r = Math.random();
+console.log(r);
+
+var yn = Math.round(Math.random());
+console.log(yn);
+
+//if (yn === 0) {
+//	alert('head');
+//} else {
+//	alert('tails');
+//}
+
+function randomNumber(n) {
+	var rn = Math.round(n*Math.random());
+	console.log(rn);	
+}
+
+randomNumber(66);
+randomNumber(35670);
+
+function randomNumRange (min, max) {
+	var rn = Math.round(Math.random() * (max-min) + min)
+	return rn;
+}
+
+var number = randomNumRange (56, 829);
+console.log(number);
+ </script>
+</body>
+</html>

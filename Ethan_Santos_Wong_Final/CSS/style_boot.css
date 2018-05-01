@@ -1,0 +1,45 @@
+body {
+	padding: 5px;
+	color: white;
+	background-color: #B56A40;
+	font-family: "Times New Roman", serif;
+}
+
+div {
+	
+	min-height: 100px;
+	min-width:250px;
+	padding: 5px;
+}
+
+ h1 {
+ 	padding: 5px;
+ }
+
+ ul.navbar-nav li a{
+      color: #EC9609;
+      font-size: 20px;
+    }
+ 
+
+
+#greeting {
+	color: #FFB438;
+	text-align: center;
+	font-size:50px;
+}
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+#heading {
+	background-color: rgba(0,0,0,0.5);
+	font-size: 30px;
+}
+
+#para {
+	background-color: rgba(139,69,19,0.5);
+	font-size: 20px;
+}
+

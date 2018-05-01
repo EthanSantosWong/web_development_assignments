@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Event Delegation</title>
+ <style type="text/css">
+  .active {
+  	color: red;
+    font-size: 3rem;
+  }
+  </style>
+  <script type="text/javascript">
+
+function alertMe() {
+	alert('Just a simple pop up window');
+}
+
+
+// Watch for all content to be fully loaded, then execute that code via an anonomous function
+
+document.addEventListener('DOMContentLoaded', function () {
+	console.log('Content has been loaded.');
+
+	document.getElementById('alertBtn').addEventListener('click', alertMe );
+
+	document.getElementById('toggleMe').addEventListener('click', function (event) {
+		console.log(event);
+
+		var element = event.target;
+
+		element.classList.toggle('active');
+	});
+
+});
+
+
+ </script>
+</head>
+<body>
+
+<p id="toggleMe">This is just a simple paragraph</p>
+
+ <button id="alertBtn">Click here to add an event</button>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+	<title>Random Tester</title>
+</head>
+<body>
+
+<div id="output"></div>
+
+ 
+ <script type="text/javascript">
+ document.addEventListener('DOMContentLoaded', function(){
+ });
+  var list = ['Ethan', 'Abby', 'Cianne', 'Aaron', 'Becky'];
+
+
+  //randomNumber(list.length);
+  
+  function randomNumber(n) {
+  	var result = document.getElementById('output');
+
+    var rn = Math.round(n * Math.random());
+    var choice = rn - 1;
+    var name = list[choice];
+    console.log(rn); 
+	console.log(choice);
+	console.log(list[choice]);
+	
+	var p = document.createElement("P");
+	var t = document.createTextNode(list[choice]);
+
+	p.appendChild(t);
+	result.appendChild(p);
+
+	//result.appendChild(p);
+  }
+	randomNumber(list.length);  
+
+ </script>
+
+ 
+</body>

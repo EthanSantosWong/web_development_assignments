@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<style type="text/css" media="screen">
+
+.abs-t-r {
+	border: 5px solid red;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.rel-t-r{
+	border: 5px solid green;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: 200px;
+	right: 100px;
+}
+
+.abs-in-rel{
+	border: 5px solid blue;
+	width:200px;
+	height: 200px;
+	position: absolute;
+	top: 150px;
+	right: 500px;
+}
+
+.rel-wrap{
+	width: 88vw;
+	height: 100vh;
+	border: 4px purple dotted;
+	position: relative;
+}
+
+ header{
+	background-color: black;
+	color: white;
+	top: 0;
+	left: 0;
+	right:0;
+	position: fixed;
+}
+</style>
+</head>
+
+<body>
+<header>
+ <h1>I am header.</h1>
+</header>
+
+
+<div class="abs-t-r">
+ <p>
+ This is the absolute position div. The position defauts the entire browser window
+ </p>
+</div>
+
+<div class="rel-t-r">
+ <p>
+ This is the relative position div. This positions an items coordinates based on where they should/were programmed to be.
+ </p>
+ </div>
+
+ <!--If you want to absolutely position an element inside another element of the page.(Which is based upon oth parent's cooridnates) you have to make the parent/child element position relative-->
+ <div class="rel-wrap">
+ <div class="abs-in-rel">
+  <p>
+  I am an absoluetly positioned div within a relavtive position div</p>
+</div>
+</div>
+
+
+
+</body>
+</html>   
+
+
